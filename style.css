@@ -10,7 +10,7 @@ p{ padding: 10px; }
 
 #gallery{ width: 920px; border: 1px solid white; overflow: hidden; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background: url(./panel.jpg) repeat-x bottom center #ffffff; box-shadow:0 0 3px #AAAAAA; }
 
-#slides{ display: flex; position: relative; }
+#slides{ display: flex; position: relative; transition: all 0.5s;}
 
 #menu{ height: 45px; }
 
@@ -21,6 +21,10 @@ li{ width: 60px; display: inline-block; list-style: none; height: 45px; overflow
 li a{ display: block; height: 35px; padding-top: 10px; background: url(./divider.png) no-repeat right ; }
 
 li:hover{ background: url(./pic_bg.png) repeat; }
+
+li.active,li.active:hover{
+    background: url(./active_bg.png) no-repeat;
+}
 
 
 
